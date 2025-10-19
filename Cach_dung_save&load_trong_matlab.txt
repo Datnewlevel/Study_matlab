@@ -1,0 +1,8 @@
+Cách sử dụng save và load trong matlab:
+B1: Đổi tên thư mục muốn lưu hoặc load trong file .m
+folderName = 'mySavedSession';
+Đổi phần mySavedSession
+B2: Xong dùng lệnh 
+VD:
+saveAll
+loadAll

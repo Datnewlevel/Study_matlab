@@ -1,0 +1,102 @@
+? ?ang ghi nh?t ký l?nh vào Do_thi_2_hamso_y=sinx_z=sin2x\commandHistory.txt
+? ?ã l?u Do_thi_2_hamso_y=sinx_z=sin2x\Figure_1.fig
+clear
+close all
+clc
+x = -5:0.1:5;
+y = sin(x);
+plot(x,y, '-s', LineWidth, 1.5);
+{Undefined function or variable 'LineWidth'.
+} 
+figure;
+plot(x,y, '-s', LineWidth, 1.5);
+{Undefined function or variable 'LineWidth'.
+} 
+plot(x,y, '-s', 'LineWidth', 1.5);
+x = -5:1:5;
+plot(x,y, '-s', 'LineWidth', 1.5);
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('plot')" style="font-weight:bold">plot</a>
+Vectors must be the same length.
+} 
+x = -5:0.5:5;
+plot(x,y, '-s', 'LineWidth', 1.5);
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('plot')" style="font-weight:bold">plot</a>
+Vectors must be the same length.
+} 
+close all
+figure;
+plot(x,y, '-s', 'LineWidth', 1.5);
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('plot')" style="font-weight:bold">plot</a>
+Vectors must be the same length.
+} 
+clear
+clc
+x = -5:1:5;
+y = sin(x);
+plot(x,y, '-s', 'LineWidth', 1.5);
+x = -5:0.5:5;
+y = sin(x);
+plot(x,y, '-s', 'LineWidth', 1.5);
+close all;
+clear;
+clc
+x = -5:0.2:5;
+y = sin(x);
+y = x.^2 + 10 / x.^5;
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mrdivide')" style="font-weight:bold"> / </a>
+Matrix dimensions must agree.
+} 
+y = x.^2 + 10 ./ x.^5;
+y = (x.^2 + 10) ./ (x.^5);
+z = sin(x) ./ 10;
+figure(1);
+plot(x,y, '^-', 'LineWidth', 1.5);
+plot(x,y, '^-', 'Do thi y', 'y = (x.^2 + 10) ./ (x.^5)');
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('plot')" style="font-weight:bold">plot</a>
+There is no Do thi y property on the Line class.
+} 
+plot(x,y, '^-', 'DisplayName', 'y = (x.^2 + 10) ./ (x.^5)');
+plot(x,y, '^-', 'LineWidth', 1.5);
+plot(x,y, '^-', 'DisplayName', 'y = (x.^2 + 10) ./ (x.^5)');
+close all
+figure;
+semilogx(x,y, '^-' , 'LineWidth', 1.5);
+[Warning: Negative data ignored] 
+gird on
+{Undefined function or variable 'gird'.
+} 
+grid on
+semilogy(x,y, '^-' , 'LineWidth', 1.5);
+[Warning: Negative data ignored] 
+plotyy(x,y, '^-', 'LineWidth', 1.5);
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('feval')" style="font-weight:bold">feval</a>
+Function to evaluate must be represented as a string scalar, character vector, or function_handle
+object.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('plotyy>fevalfun', 'D:\MATLAB\R2018a\toolbox\matlab\graph2d\plotyy.m', 368)" style="font-weight:bold">plotyy>fevalfun</a> (<a href="matlab: opentoline('D:\MATLAB\R2018a\toolbox\matlab\graph2d\plotyy.m',368,0)">line 368</a>)
+    h = feval(func,x,y);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('plotyy', 'D:\MATLAB\R2018a\toolbox\matlab\graph2d\plotyy.m', 73)" style="font-weight:bold">plotyy</a> (<a href="matlab: opentoline('D:\MATLAB\R2018a\toolbox\matlab\graph2d\plotyy.m',73,0)">line 73</a>)
+[h1,ax(1)] = fevalfun(fun1,ax(1),x1,y1,caxspecified);
+} 
+semilogy(x,y, '^-' , 'LineWidth', 1.5);
+[Warning: Negative data ignored] 
+semilogy(x,z, '-' , 'LineWidth', 3);
+[Warning: Negative data ignored] 
+semilogy(x,y, '^-' , 'LineWidth', 1.5);
+[Warning: Negative data ignored] 
+hold on;
+semilogx(x,z, '-' , 'LineWidth', 3);
+close all
+clear
+clc
+loadAll('Do_thi_2_hamso_y=sinx_z=sin2x');
+? ?ã n?p bi?n t? Do_thi_2_hamso_y=sinx_z=sin2x\allVariables.mat
+? ?ã m? Figure_1.fig
+? Nh?t ký l?nh n?m ?: Do_thi_2_hamso_y=sinx_z=sin2x\commandHistory.txt
+? B?n m? file text này ?? xem l?i/copy l?nh c?n ch?y.
+hold off;
+plot(x,z, '-s', 'LineWidth', 1.5, 'MarkerSize', 6);
+{Undefined function or variable 'x'.
+} 
+hold on

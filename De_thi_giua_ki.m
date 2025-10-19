@@ -1,0 +1,16 @@
+x = -5:0.25:5;
+y = -exp(-x);
+z = -x.^3;
+figure; 
+plot(x, y, 'o-', 'LineWidth', 1, 'Color', 'k', 'MarkerFaceColor', 'k', 'MarkerEdgeColor', 'k', 'MarkerSize', 8);
+hold on; 
+plot(x, z, 'LineWidth', 4, 'Color', 'r');
+grid on;
+axis([-5 5 -150 150]);
+title('Do thi ham so y = -1/e^x, z = -x^3');
+xlabel('Truc hoanh');
+ylabel('Truc tung');
+plot(0, 0, 'o', 'MarkerEdgeColor' , 'k', 'MarkerFaceColor', 'k', 'MarkerSize' , 10);
+legend('y = -1/e^x', 'z = -x^3', 'Location', 'northeast');
+text(0, -25, '(0;0)', 'HorizontalAlignment', 'center', 'EdgeColor' , 'k', 'BackgroundColor','w');
+hold off;
