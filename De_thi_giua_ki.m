@@ -11,6 +11,6 @@ title('Do thi ham so y = -1/e^x, z = -x^3');
 xlabel('Truc hoanh');
 ylabel('Truc tung');
 plot(0, 0, 'o', 'MarkerEdgeColor' , 'k', 'MarkerFaceColor', 'k', 'MarkerSize' , 10);
-legend('y = -1/e^x', 'z = -x^3', 'Location', 'northeast');
+legend('y = -exp(-x);', 'z = -x.^3;', 'Location', 'Southeast');
 text(0, -25, '(0;0)', 'HorizontalAlignment', 'center', 'EdgeColor' , 'k', 'BackgroundColor','w');
 hold off;

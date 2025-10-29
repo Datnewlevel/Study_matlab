@@ -1,0 +1,9 @@
+Đây là cách nhanh nhất để thay đổi giao diện đường vẽ, 
+bằng một chuỗi ký tự duy nhất theo cấu trúc '[Màu sắc][Kiểu đường][Loại Marker]'.
+
+Màu sắc: 'b' (blue), 'g' (green), 'r' (red), 'k' (black), 'm' (magenta), 'y' (yellow).
+
+Kiểu đường: '-' (nét liền), '--' (nét đứt), ':' (nét chấm), '-.' (nét chấm gạch).
+
+Loại Marker (Ký hiệu điểm): '.' (dấu chấm), 'o' (tròn), '*' (hoa thị), 's' (vuông), 
+'d' (kim cương), 'p' (ngôi sao 5 cánh), '>' (tam giác).
