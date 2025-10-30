@@ -7,3 +7,11 @@ Kiểu đường: '-' (nét liền), '--' (nét đứt), ':' (nét chấm), '-.'
 
 Loại Marker (Ký hiệu điểm): '.' (dấu chấm), 'o' (tròn), '*' (hoa thị), 's' (vuông), 
 'd' (kim cương), 'p' (ngôi sao 5 cánh), '>' (tam giác).
+
+xlim, ylim đặt giới hạn
+z(isinf(z)) = NaN; (Thay thế tất cả các giá trị vô cùng (Inf hoặc -Inf) trong một ma trận 
+hoặc vector z bằng giá trị NaN (Not a Number))
+
+text(-4, 20, '(x + 5)/(x^3 + 1)');
+text(-3.3, 10, '\downarrow');
+text(3, 60, 'x^3 + 1 \rightarrow');    (Lệnh tạo ra cái mũi tên)
